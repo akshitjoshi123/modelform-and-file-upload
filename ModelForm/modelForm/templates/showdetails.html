@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>Feedback</title>
+    </head>
+    <body>
+        <form method="post">
+        {% csrf_token%}
+            <h1>
+            <label>Name : </label>{{name}} </br>
+            <label>Email : </label>{{email}} </br>
+            <label>Descrition : </label>{{desc}} </br>
+            </h2>
+        </form>
+    </body>
+</html>

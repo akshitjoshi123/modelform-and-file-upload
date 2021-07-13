@@ -1,0 +1,13 @@
+<html>
+<head>
+<title>File Uploading</title></head>
+<body>
+
+{% if obj %}
+    {% for ob1 in obj%}
+    <li>{{ ob1.description}}</li>
+    <li><a href="{{ ob1.document.url}}">{{ob1.document.name}}</a></li>
+    {% endfor %}
+{% endif %}
+</body>
+</html>
