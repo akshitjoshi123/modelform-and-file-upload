@@ -1,7 +1,7 @@
-from django.urls import path, include
+from django.urls import path
 from appFileUpload import views
 
 urlpatterns = [
-    path('',views.fileUp),
-    path('show/',views.show)
+    path('', views.fileUp),
+    path('show/', views.show)
 ]
